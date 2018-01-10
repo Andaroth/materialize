@@ -5,6 +5,7 @@ $(document).ready(function() {
   $('.carousel.carousel-slider').carousel({
     'dist': 10,
     'next': 2,
+    'duration': 2000,
     'indicators': true
   });
   // Scrollspy
