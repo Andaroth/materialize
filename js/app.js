@@ -7,9 +7,6 @@ $(document).ready(function() {
     'next': 2,
     'indicators': true
   });
-  // Scrollfire
-  var options = [
-    {selector: '.scrollfire', offset: 200, function(el){showStaggeredList($(el))}}
-  ];
-  Materialize.scrollFire(options);
+  // Scrollspy
+  $('.scrollspy').scrollSpy();
 });
