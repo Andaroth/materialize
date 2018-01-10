@@ -1,0 +1,24 @@
+.mt20 {
+  margin-top: 20px;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.p5 {
+  padding: 5px;
+}
+.p20 {
+  padding: 20px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.maxh200 {
+  max-height: 200px;
+}
+.bradius {
+  border-radius: 4px !important;
+}
+.rgbablack-7 {
+  background-color: rgba(0,0,0,.7);
+}
