@@ -22,3 +22,9 @@
 .rgbablack-7 {
   background-color: rgba(0,0,0,.7);
 }
+a:hover {
+  text-decoration: underline;
+}
+a.btn:hover, a.btn-large:hover {
+  text-decoration: none;
+}
