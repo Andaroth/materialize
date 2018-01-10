@@ -19,8 +19,8 @@
 .bradius {
   border-radius: 4px !important;
 }
-.rgbablack-7 {
-  background-color: rgba(0,0,0,.7);
+.rgbablack-5 {
+  background-color: rgba(0,0,0,.5);
 }
 a:hover {
   text-decoration: underline;
