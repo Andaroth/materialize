@@ -1,7 +1,5 @@
 $(document).ready(function() {
-  // Parallax
   $('.parallax').parallax();
-  // Carousel
   $('.carousel.carousel-slider').carousel({
     dist: 10,
     next: 2,
@@ -9,6 +7,5 @@ $(document).ready(function() {
     indicators: true,
     fullWidth: true
   });
-  // Scrollspy
   $('.scrollspy').scrollSpy();
 });
