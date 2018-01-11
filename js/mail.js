@@ -1,6 +1,20 @@
 $(document).ready(function(){
   $("#name,#email,#select1,#textarea1").val("");
   $("#sendbtn").attr("disabled",true);
+  $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
+  $("#select1").change(function() {
+    var name = $("#name").val(),
+        email = $("#email").val(),
+        type = $("#select1").val(),
+        msg = $("#textarea1").val();
+    if (type == "none") {
+      $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
+      $("#name,#email,#textarea1").attr("disabled",true);
+    } else {
+      $("#sendbtn,#name,#email,#textarea1,.formlabel").removeClass("hide"); 
+      $("#name,#email,#textarea1").removeAttr("disabled");
+    }
+  });
   $(".forminput").keyup(function(){
     var name = $("#name").val(),
         email = $("#email").val(),
