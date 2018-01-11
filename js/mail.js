@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  $("#name,#email,#textarea1").val("");
   $("#select1").val("none");
   $("#sendbtn").attr("disabled",true);
   $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
