@@ -1,18 +1,5 @@
 $(document).ready(function(){
-  $("#select1").val("none");
-  $("#sendbtn").attr("disabled",true);
-  $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
-  $("#select1").change(function() {
-    var type = $("#select1").val();
-    if (type == "none") {
-      $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
-      $("#name,#email,#textarea1").attr("disabled",true);
-    } else {
-      $("#sendbtn,#name,#email,#textarea1,.formlabel").removeClass("hide"); 
-      $("#name,#email,#textarea1").removeAttr("disabled");
-    } // else/if end
-  }); // change end
-  $(".forminput").keyup(function(){
+  checkForm = function() {
     var name = $("#name").val(), email = $("#email").val(), type = $("#select1").val(), msg = $("#textarea1").val();
     switch(type){
       case "onepage": type="Site une page"; break;
@@ -25,5 +12,22 @@ $(document).ready(function(){
     if((name.length > 0) && (email.length > 0) && (msg.length > 0) ){
       $("#sendbtn").removeAttr("disabled");
     } else {$("#sendbtn").attr("disabled",true);}
+  } // function end
+  $("#select1").val("none");
+  $("#sendbtn").attr("disabled",true);
+  $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
+  $("#select1").change(function() {
+    var type = $("#select1").val();
+    if (type == "none") {
+      $("#sendbtn,#name,#email,#textarea1,.formlabel").addClass("hide");
+      $("#name,#email,#textarea1").attr("disabled",true);
+    } else {
+      $("#sendbtn,#name,#email,#textarea1,.formlabel").removeClass("hide"); 
+      $("#name,#email,#textarea1").removeAttr("disabled");
+    } // else/if end
+    checkForm();
+  }); // change end
+  $(".forminput").keyup(function(){
+    checkForm();
   }); // keyup end
 }); // ready end
