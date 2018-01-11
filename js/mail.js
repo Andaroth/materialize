@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $("#name,#email,#select1,#textarea1").val("");
+  $("#sendbtn").attr("disabled",true);
   $(".forminput").keyup(function(){
     var name = $("#name").val(),
         email = $("#email").val(),
