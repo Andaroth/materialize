@@ -27,7 +27,7 @@ $(document).ready(function(){
       case "pro": type="Site pro sur mesure"; break;
       default: type="Message"; break;
     }
-    $("#sendbtn").attr("href","mailto:ax.fiolle@gmail.com?subject="+type+" par "+name+" (mail: "+email+")&body="+msg);
+    $("#sendbtn").attr("href","mailto:ax.fiolle@gmail.com?subject=["+type+"] "+name+" (mail: "+email+")&body="+msg);
     if((name.length > 0) &&
       (email.length > 0) &&
       (msg.length > 0) ){
