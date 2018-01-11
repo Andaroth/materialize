@@ -10,4 +10,3 @@
 .rgbablack-5 { color:orange; background-color:rgba(0,0,0,.5) }
 a:hover, a:active { text-decoration:underline }
 a.btn:hover, a.btn-large:hover, a.btn:active, a.btn-large:active, abbr[title] { text-decoration:none !important }
-.hidden { display:none }
