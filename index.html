@@ -132,18 +132,18 @@
         <form>
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="name" type="text" class="validate white bradius">
+              <input id="name" type="text" class="forminput validate white bradius">
               <label for="name">Nom complet</label>
             </div>
             <div class="input-field col s12 m6">
-              <input id="email" type="email" class="validate white bradius">
+              <input id="email" type="email" class="forminput validate white bradius">
               <label for="email">Email</label>
             </div>
           </div>
           <div class="row">
             <div class="col s12">
               <label>Que cherchez-vous ?</label>
-              <select class="browser-default bradius">
+              <select id="select1" class="forminput browser-default bradius">
                 <option value="" disabled selected>Choisissez une prestation</option>
                 <option value="onepage">Site une page</option>
                 <option value="multipage">Site multi-page</option>
@@ -155,11 +155,11 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea white bradius" disabled></textarea>
-              <label for="textarea1">Décrivez vos besoins (ce formulaire est désactivé sur github)</label>
+              <textarea id="textarea1" class="forminput materialize-textarea white bradius"></textarea>
+              <label for="textarea1">Décrivez vos besoins</label>
             </div>
           </div>
-          <div class="row center-align"><a class="waves-effect waves-purple btn-large" href="mailto:ax.fiolle@gmail.com">Valider</a></div>
+          <div class="row center-align"><a id="sendbtn" class="waves-effect waves-purple btn-large" href="mailto:ax.fiolle@gmail.com" disabled>Valider</a></div>
         </form>
       </div>
     </div>
@@ -167,9 +167,15 @@
       <div class="container">
         <div class="row">
           <div class="col l8 s12">
-            <h5 class="white-text">À propos de cette page</h5>
-            <p class="grey-text text-lighten-4">Grâce à <a href="http://materializecss.com/">Materialize</a>, ce site n'a nécessité d'écrire que douze sélecteurs CSS, quatre instructions jQuery (dont trois pré-écrites) et environ 200 lignes de HTML, le tout en moins de 24 heures.</p>
-            <p>Je me bat pour qu'un jour toutes les pages du web tout entier soient valides au W3C.</p>
+            <div class="row">
+              <h5 class="white-text">À propos de cette page</h5>
+              <p class="grey-text text-lighten-4">Grâce à <a href="http://materializecss.com/">Materialize</a>, ce site n'a nécessité d'écrire que douze sélecteurs CSS, sept instructions jQuery (dont trois pré-écrites) et environ 200 lignes de HTML, le tout en moins de 24 heures.</p>
+            </div>
+            <div class="row">
+              <h6>Je me bats pour qu'un jour toutes les pages du web tout entier soient valides au W3C.</h6>
+              <div class="col s12 m6 center-align mt20"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valide HTML5" height="30"></div>
+              <div class="col s12 m6 center-align mt20"><img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valide CSS" height="30"></div>
+            </div>
           </div>
           <div class="col l4 offset-2 s12">
             <h5 class="white-text">Sites amis</h5>
@@ -178,10 +184,6 @@
               <li><a class="grey-text text-lighten-3" href="http://agenceduweb.be/">l'Agence du Web</a></li>
               <li><a class="grey-text text-lighten-3" href="http://smartentrepreneuriat.com/">Smart Entrepreneuriat</a></li>
             </ul>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 center-align mt20"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valide HTML5" height="30"></div>
-            <div class="col s12 m6 center-align mt20"><img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valide CSS" height="30"></div>
           </div>
         </div>
       </div>
@@ -194,5 +196,6 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/materialize.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/mail.js"></script>
   </body>
 </html>
